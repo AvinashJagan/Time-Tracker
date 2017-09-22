@@ -33,7 +33,10 @@
         <activity android:name=".AdminSignIn" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".Searchresult" />
-        <activity android:name=".BeaconTrigger"></activity>
+        <activity android:name=".BeaconTrigger" />
+        <activity android:name=".DailyActivity" />
+        <activity android:name=".WeeklyActivity" />
+        <activity android:name=".MonthlyActivity"></activity>
     </application>
 
 </manifest>

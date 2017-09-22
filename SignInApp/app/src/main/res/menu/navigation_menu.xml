@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+
     <item android:id="@+id/nav_account"
+        android:background="@color/colorBlack"
         android:onClick="MyAccount"
-        android:title="My Account"
+        android:title="Edit Account"
 
         android:icon="@drawable/ic_person_black_24dp"/>
 

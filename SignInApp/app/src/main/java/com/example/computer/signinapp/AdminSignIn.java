@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -20,6 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 public class AdminSignIn extends AppCompatActivity {
     TextView uemail,navename;
     Button b1,b2;
+    Button b5,b6,b7;
     FirebaseAuth firebaseAuth;
     DatabaseReference databaseReference,childref;
     String temp;
@@ -29,6 +31,9 @@ public class AdminSignIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_sign_in);
         firebaseAuth = FirebaseAuth.getInstance();
+        b5 = (Button)findViewById(R.id.daily_button1);
+        b6 = (Button)findViewById(R.id.weekly_button1);
+        b7 = (Button)findViewById(R.id.monthly_button1);
         //FirebaseUser user = firebaseAuth.getCurrentUser();
         uemail = (TextView) findViewById(R.id.textAdminName);
 
@@ -50,6 +55,29 @@ public class AdminSignIn extends AppCompatActivity {
             }
         });
 
+
+        b5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                daily(v);
+
+            }
+        });
+
+        b6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                weekly(v);
+            }
+        });
+
+        b7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                monthly(v);
+            }
+        });
+
     }
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -66,5 +94,18 @@ public class AdminSignIn extends AppCompatActivity {
         Intent intent = new Intent(this, SearchActivity.class);
         startActivity(intent);
 
+    }
+
+    public void daily(View view){
+        Intent daily = new Intent(getApplicationContext(), DailyActivity.class);
+        startActivity(daily);
+    }
+    public void weekly(View view){
+        Intent weekly = new Intent(getApplicationContext(), WeeklyActivity.class);
+        startActivity(weekly);
+    }
+    public void monthly(View view){
+        Intent monthly = new Intent(getApplicationContext(), WeeklyActivity.class);
+        startActivity(monthly);
     }
 }
