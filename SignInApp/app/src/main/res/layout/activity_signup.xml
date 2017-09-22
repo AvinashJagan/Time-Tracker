@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.computer.signinapp.signupActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration Page"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="45dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:orientation="vertical">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:hint="Employee Name:"
+                android:inputType="textPersonName"
+                android:layout_margin="20dp">
+
+            </EditText>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:hint="Email ID:"
+                android:inputType="textPersonName"
+                android:layout_margin="20dp">
+
+            </EditText>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:hint="Password:"
+                android:inputType="textPassword"
+                android:layout_margin="20dp">
+
+            </EditText>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/dob"
+                android:hint="Date Of Birth:"
+                android:inputType="text"
+                android:layout_margin="20dp">
+
+            </EditText>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone"
+                android:hint="Phone:"
+                android:inputType="phone"
+                android:layout_margin="20dp">
+
+            </EditText>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/role"
+                android:hint="Role:"
+                android:inputType="text"
+                android:layout_margin="20dp">
+
+            </EditText>
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/gender"
+                android:hint="Male/Female"
+                android:inputType="text"
+                android:layout_margin="20dp">
+
+            </EditText>
+        </android.support.constraint.ConstraintLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/reg"
+            android:onClick = ""/>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
